@@ -2,6 +2,7 @@ package com.hello.tms.dev.provider.service;
 
 
 import com.alibaba.dubbo.config.annotation.Service;
+import com.alibaba.dubbo.rpc.RpcContext;
 import com.hello.tms.dev.client.HelloService;
 import org.springframework.stereotype.Component;
 import org.slf4j.Logger;
@@ -19,7 +20,7 @@ public class HelloServiceImp implements HelloService {
 
     @Override
     public String SayHello(String name) {
-        logger.info("请求参数:"+name);
-        return "Hello,"+name;
+        logger.info("Hello " + name + ", request from consumer: " + RpcContext.getContext().getRemoteAddress());
+        return "Hello " + name + ", response from provider: " + RpcContext.getContext().getLocalAddress();
     }
 }

@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 public class HelloController {
+
     @Reference(version = "1.0.0")
     HelloService helloService;
 
@@ -19,5 +20,4 @@ public class HelloController {
     public String sayHello(String name){
         return helloService.SayHello(name);
     }
-
 }

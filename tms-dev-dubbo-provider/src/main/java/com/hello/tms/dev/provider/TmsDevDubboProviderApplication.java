@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 @EnableDubbo
+@MapperScan("com.hello.tms.dev.provider.dao")
 public class TmsDevDubboProviderApplication {
 
     public static void main(String[] args) {
