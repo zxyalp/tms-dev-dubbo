@@ -17,4 +17,4 @@ dubbo:
     name: dubbo
     port: 20882
   consumer:
-    mock: true
+    mock: false
