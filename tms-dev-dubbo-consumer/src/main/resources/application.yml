@@ -1,0 +1,19 @@
+# 端口号
+server:
+  port: 8012
+
+spring:
+  application:
+    name: tms-dev-dubbo-consumer
+
+# dubbo服务消费者配置
+dubbo:
+  application:
+    name: tms-dev-dubbo-consumer
+  registry:
+    address: zookeeper://127.0.0.1:2181
+    protocol: zookeeper
+  protocol:
+    name: dubbo
+    port: 20882
+
