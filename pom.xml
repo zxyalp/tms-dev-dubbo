@@ -19,6 +19,7 @@
         <module>tms-dev-dubbo-client</module>
         <module>tms-dev-dubbo-consumer</module>
         <module>tms-dev-dubbo-provider</module>
+        <module>tms-demo-mock</module>
     </modules>
 
     <properties>
